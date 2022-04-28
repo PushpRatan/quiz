@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;900&display=swap");
+
+body {
+    /* font-family: Open Sans; */
+    font: 400 1.5em/1.58 Vollkorn, serif;
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.gallery {
+    font-size: 1rem;
+}
+
+/* grid */
+.gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .item img {
+    vertical-align: middle;
+}
