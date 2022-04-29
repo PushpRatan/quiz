@@ -1,0 +1,66 @@
+@media screen and (max-width: 880px) {
+    body{
+        background-image: url(pik.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-size: cover;
+        height: 100vw;
+        font-family: sans-serif;
+      }    
+
+    .start_btn,
+.info_box,
+.quiz_box,
+.result_box{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-42%, -41%) ;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2), 
+                10px 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-42%, -41%) scale(0.7);
+}
+
+.info_box{
+    width: 450px;
+    background: #fff;
+    border-radius: 50px;
+    transform: translate(-42%, -41%) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.quiz_box{
+    width: 500px;
+    background: #fff;
+    border-radius: 50px;
+    transform: translate(-42%, -41%) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.result_box{
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-42%, -41%) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+}
